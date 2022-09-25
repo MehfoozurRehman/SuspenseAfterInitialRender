@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 export default function SuspenseAfterInitialRender({ fallback, children }) {
   let [isInitialRender, setIsInitialRender] = useState(true);

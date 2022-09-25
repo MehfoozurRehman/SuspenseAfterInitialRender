@@ -3,7 +3,7 @@ import SuspenseAfterInitialRender from "./lib/index";
 
 export default function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<>Loading</>}>
       hey there
       <SuspenseAfterInitialRender fallback={<>Loading</>}>
         <>hello world</>
