@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MehfoozurRehman/react-checkbox.git"
+    "url": "git+https://github.com/MehfoozurRehman/SuspenseAfterInitialRender.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
