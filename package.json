@@ -3,9 +3,7 @@
   "description": "SuspenseAfterInitialRender",
   "author": "Mehfooz-ur-Rehman",
   "keywords": [
-    "react",
-    "components",
-    "ui"
+    "react"
   ],
   "version": "1.0.2",
   "license": "MIT",
@@ -26,16 +24,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf dist && babel src/lib --out-dir dist --copy-files",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build": "rm -rf dist && babel src --out-dir dist --copy-files"
   },
   "browserslist": {
     "production": [
@@ -53,7 +42,7 @@
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
-    "babel-preset-minify": "^0.5.2",
-    "react-scripts": "5.0.1"
+    "@babel/preset-react": "^7.18.6",
+    "babel-preset-minify": "^0.5.2"
   }
 }
