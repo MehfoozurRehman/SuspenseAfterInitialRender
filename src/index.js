@@ -1,6 +1,10 @@
 import React, { Suspense, useEffect, useState } from "react";
 
-export default function SuspenseAfterInitialRender({ fallback, children }) {
+export default function SuspenseAfterInitialRender({
+  fallback,
+  children,
+  ...props
+}) {
   let [isInitialRender, setIsInitialRender] = useState(true);
 
   return isInitialRender ? (
@@ -9,7 +13,9 @@ export default function SuspenseAfterInitialRender({ fallback, children }) {
       {children}
     </>
   ) : (
-    <Suspense fallback={fallback}>{children}</Suspense>
+    <Suspense fallback={fallback} {...props}>
+      {children}
+    </Suspense>
   );
 }
 
