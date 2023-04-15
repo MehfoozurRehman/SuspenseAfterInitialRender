@@ -1,6 +1,6 @@
 {
   "name": "suspense-after-initial-render",
-  "description": "SuspenseAfterInitialRender",
+  "description": "Suspense after initial render react hook component",
   "author": "Mehfooz-ur-Rehman",
   "keywords": [
     "react",
@@ -11,11 +11,9 @@
     "suspense-after-initial-render-react-hook",
     "suspense-after-initial-render-react-hook-component"
   ],
-  "version": "1.0.5",
+  "version": "2.0.1",
   "license": "MIT",
   "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
   "files": [
     "dist",
     "README.md"
@@ -24,19 +22,23 @@
     "type": "git",
     "url": "git+https://github.com/MehfoozurRehman/SuspenseAfterInitialRender.git"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "main": "./dist/suspense-after-initial-render.umd.js",
+  "module": "./dist/suspense-after-initial-render.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/suspense-after-initial-render.es.js",
+      "require": "./dist/suspense-after-initial-render.umd.js"
+    }
   },
   "scripts": {
-    "build": "rm -rf dist && babel src --out-dir dist --copy-files"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
-    "@babel/preset-react": "^7.18.6",
-    "babel-preset-minify": "^0.5.2"
+    "@vitejs/plugin-react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1"
   }
 }
