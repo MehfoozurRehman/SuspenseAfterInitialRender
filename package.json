@@ -11,7 +11,7 @@
     "suspense-after-initial-render-react-hook",
     "suspense-after-initial-render-react-hook-component"
   ],
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "private": false,
   "files": [
@@ -39,6 +39,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.4",
-    "vite": "^4.2.1"
+    "vite": "^4.2.1",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
