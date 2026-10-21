@@ -31,8 +31,8 @@
     }
   },
   "scripts": {
-    "dev": "node api.js && vite",
-    "build": "node api.js && vite build"
+    "dev": "vite",
+    "build": "vite build"
   },
   "devDependencies": {
     "@types/node": "^22.19.1",
